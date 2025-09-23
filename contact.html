@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="author" content="Souvik Konar">
+  <meta name="description" content="Contact information for the Little Chocolate Shop">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>LCS | Contact Us</title>
+  <link rel="icon" href="shop_img.png" type="image/png">
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+
+  <!-- CSS -->
+  <style>
+    body {
+      font-family: "Poppins", sans-serif;
+      margin: 0;
+      padding: 0;
+      background: #fff8f0;
+      color: #333;
+    }
+
+    header {
+      text-align: center;
+      background: linear-gradient(45deg, #8d5524, #d2691e);
+      color: #fff;
+      padding: 2rem 1rem;
+    }
+
+    header h1 {
+      margin-bottom: 1rem;
+      font-size: 2rem;
+    }
+
+    nav ul {
+      list-style: none;
+      padding: 0;
+      display: flex;
+      justify-content: center;
+      gap: 1.5rem;
+      flex-wrap: wrap;
+    }
+
+    nav a {
+      text-decoration: none;
+      font-weight: 600;
+      color: #fff;
+      transition: color 0.3s;
+    }
+
+    nav a:hover {
+      color: #ffd700;
+    }
+
+    figure {
+      margin: 1.5rem auto;
+      text-align: center;
+    }
+
+    figure img {
+      width: 100%;
+      max-width: 500px;
+      border-radius: 15px;
+      box-shadow: 0 6px 15px rgba(0, 0, 0, 0.25);
+    }
+
+    figcaption {
+      margin-top: 0.5rem;
+      font-style: italic;
+    }
+
+    main {
+      max-width: 900px;
+      margin: 2rem auto;
+      padding: 0 1rem;
+    }
+
+    h2 {
+      text-align: center;
+      color: #5d3a00;
+      margin-bottom: 1rem;
+    }
+
+    form {
+      background: #fff;
+      padding: 2rem;
+      border-radius: 12px;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+      margin-bottom: 2rem;
+    }
+
+    fieldset {
+      border: none;
+      padding: 0;
+    }
+
+    legend {
+      font-weight: 700;
+      margin-bottom: 1rem;
+      display: block;
+    }
+
+    label {
+      display: block;
+      margin-bottom: 0.3rem;
+      font-weight: 600;
+    }
+
+    input,
+    textarea {
+      width: 100%;
+      padding: 0.8rem;
+      margin-bottom: 1rem;
+      border: 1px solid #ccc;
+      border-radius: 8px;
+      font-family: inherit;
+      font-size: 1rem;
+    }
+
+    button {
+      background: #8d5524;
+      color: #fff;
+      padding: 0.8rem 1.5rem;
+      border: none;
+      border-radius: 8px;
+      cursor: pointer;
+      font-size: 1rem;
+      margin-right: 0.5rem;
+      transition: background 0.3s;
+    }
+
+    button:hover {
+      background: #5d3a00;
+    }
+
+    address {
+      background: #fff;
+      padding: 1.5rem;
+      border-radius: 12px;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+      font-style: normal;
+      line-height: 1.6;
+    }
+
+    address a {
+      color: #8d5524;
+      font-weight: 600;
+      text-decoration: none;
+    }
+
+    address a:hover {
+      text-decoration: underline;
+    }
+
+    footer {
+      text-align: center;
+      background: #5d3a00;
+      color: #fff;
+      padding: 1rem;
+      margin-top: 2rem;
+    }
+
+    /* Responsive */
+    @media (max-width: 600px) {
+      nav ul {
+        flex-direction: column;
+        gap: 0.8rem;
+      }
+
+      form {
+        padding: 1.2rem;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <header>
+    <h1>📞 Contact Us</h1>
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="index.html#about">About LCS</a></li>
+        <li><a href="index.html#menu">Our Menu</a></li>
+        <li><a href="hours.html">Store Hours</a></li>
+      </ul>
+    </nav>
+    <figure>
+      <img src="choclate_img.jpeg" alt="Little Chocolate Shop Chocolates" title="Chocolates ready to eat">
+      <figcaption>Sweet treats from our Chocolate Shop</figcaption>
+    </figure>
+  </header>
+
+  <main>
+    <!-- Contact Form -->
+    <section>
+      <h2>Send Us a Message</h2>
+      <form action="https://httpbin.org/get" method="get">
+        <fieldset>
+          <legend>We’d love to hear from you 💌</legend>
+
+          <label for="name">Name:</label>
+          <input type="text" name="name" id="name" placeholder="Your Name" required>
+
+          <label for="email">Email:</label>
+          <input type="email" name="email" id="email" placeholder="Your Email" required>
+
+          <label for="message">Your Message:</label>
+          <textarea name="message" id="message" rows="6" placeholder="Type your message here..."></textarea>
+
+          <button type="submit">Send</button>
+          <button type="reset">Reset</button>
+        </fieldset>
+      </form>
+    </section>
+
+    <!-- Location -->
+    <section>
+      <h2>Our Location</h2>
+      <address>
+        555 Chocolate Shop, Barasat <br>
+        Barasat, Kolkata <br>
+        📞 Phone: <a href="tel:+7777777777">777-777-7777</a>
+      </address>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 A Little Chocolate Shop | Designed by Souvik Konar</p>
+  </footer>
+
+  <!-- JS -->
+  <script>
+    // Simple form submit confirmation
+    const form = document.querySelector("form");
+    form.addEventListener("submit", (e) => {
+      alert("✅ Your message has been sent! Thank you for contacting us.");
+    });
+  </script>
+</body>
+
+</html>

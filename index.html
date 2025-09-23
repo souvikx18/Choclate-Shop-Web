@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="author" content="Souvik Konar">
+  <meta name="description" content="Official website of A Little Chocolate Shop">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>A Little Chocolate Shop</title>
+  <link rel="icon" href="shop_img.png" type="image/png">
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body id="top">
+  <!-- Header -->
+  <header class="header">
+    <h1>🍫 Welcome to the Little Chocolate Shop 🍫</h1>
+
+    <!-- Navigation -->
+    <nav class="navbar">
+      <button class="menu-toggle">☰</button>
+      <ul class="nav-links">
+        <li><a href="#about">About LCS</a></li>
+        <li><a href="#menu">Our Menu</a></li>
+        <li><a href="hours.html">Store Hours</a></li>
+        <li><a href="contact.html">Contact Us</a></li>
+      </ul>
+    </nav>
+
+    <!-- Hero Image -->
+    <figure class="hero">
+      <img src="shop_img.jpeg" alt="Chocolates" title="We love Chocolates">
+      <figcaption>Delicious Chocolates from our Shop</figcaption>
+    </figure>
+  </header>
+
+  <!-- Main -->
+  <main>
+    <!-- About -->
+    <section id="about" class="about">
+      <h2>About LCS</h2>
+      <p>
+        <abbr title="The Little Chocolate Shop">LCS</abbr> was founded in <time datetime="2025">2025</time>.  
+        Our shop was built from a <strong>love of chocolates</strong> 🍫.  
+        We hope our shop adds a unique and sweet touch to our little town.
+      </p>
+
+      <aside class="history">
+        <h3>Chocolate History</h3>
+        <details>
+          <summary>When did chocolates first appear in India?</summary>
+          <p>
+            Chocolates were introduced to India during the British colonial period.
+            Initially, they were a luxury item enjoyed only by the elite and British officials.  
+            The first significant entry into the Indian market came when Cadbury
+            started selling chocolates in India around <time datetime="1948">1948</time>.  
+            Over time, chocolates became affordable and popular, becoming one of the most loved sweets in India.  
+            (<cite><a href="https://en.wikipedia.org/wiki/Cadbury" target="_blank">Source: Wikipedia</a></cite>)
+          </p>
+        </details>
+      </aside>
+    </section>
+
+    <!-- Menu -->
+    <section id="menu" class="menu">
+      <h2>Our Menu</h2>
+      <table>
+        <caption>🍫 Our Chocolate Menu 🍫</caption>
+        <thead>
+          <tr>
+            <th>Chocolates</th>
+            <th>Qty</th>
+            <th>Price</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td rowspan="3">Dairy Milk</td>
+            <td>1</td>
+            <td>$5.50</td>
+          </tr>
+          <tr>
+            <td>2</td>
+            <td>$10.00</td>
+          </tr>
+          <tr>
+            <td>3</td>
+            <td>$15.00</td>
+          </tr>
+          <tr>
+            <td rowspan="3">5 Star</td>
+            <td>1</td>
+            <td>$4.50</td>
+          </tr>
+          <tr>
+            <td>2</td>
+            <td>$8.00</td>
+          </tr>
+          <tr>
+            <td>3</td>
+            <td>$12.00</td>
+          </tr>
+        </tbody>
+        <tfoot>
+          <tr>
+            <td colspan="3">✨ Tasty &amp; Sweet – $5 extra ✨</td>
+          </tr>
+        </tfoot>
+      </table>
+
+      <!-- Fixed Back to Top -->
+      <p class="back-top"><a href="#top">⬆ Back To The Top</a></p>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer>
+    <p>&copy; 2025 A Little Chocolate Shop | Designed by Souvik Konar</p>
+  </footer>
+
+  <!-- JavaScript -->
+  <script>
+    // Navbar toggle
+    const menuToggle = document.querySelector('.menu-toggle');
+    const navLinks = document.querySelector('.nav-links');
+
+    menuToggle.addEventListener('click', () => {
+      navLinks.classList.toggle('active');
+    });
+
+    // Smooth scroll
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+      anchor.addEventListener('click', function (e) {
+        const targetId = this.getAttribute('href');
+        if (targetId && targetId.startsWith("#")) {
+          e.preventDefault();
+          const target = document.querySelector(targetId);
+          if (target) {
+            target.scrollIntoView({ behavior: 'smooth' });
+          }
+        }
+      });
+    });
+  </script>
+</body>
+</html>

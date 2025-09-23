@@ -1,0 +1,104 @@
+/* Store Hours Section */
+.hours {
+  text-align: center;
+  padding: 2rem;
+}
+
+.hours h2 {
+  font-size: 1.8rem;
+  color: #5d3a00;
+  margin-bottom: 1rem;
+}
+
+.hours .intro {
+  font-size: 1.2rem;
+  margin-bottom: 2rem;
+  color: #4b2e2e;
+}
+
+/* Hours Card */
+.hours-card {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  flex-wrap: wrap;
+  max-width: 700px;
+  margin: auto;
+}
+
+.hours-card .day {
+  background: #fff3e0;
+  padding: 1.5rem;
+  border-radius: 15px;
+  width: 280px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s;
+}
+
+.hours-card .day:hover {
+  transform: translateY(-5px);
+}
+
+.hours-card h3 {
+  color: #5d3a00;
+  margin-bottom: 0.5rem;
+}
+
+.hours-card p {
+  font-size: 1.1rem;
+  color: #333;
+}
+
+/* Back to top */
+.back-top {
+  margin-top: 2rem;
+}
+
+.back-top a {
+  text-decoration: none;
+  font-weight: bold;
+  color: #5d3a00;
+  transition: color 0.3s;
+}
+
+.back-top a:hover {
+  color: #a97142;
+}
+
+.hours-card {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  flex-wrap: wrap;
+  max-width: 700px;
+  margin: 2rem auto;
+}
+
+.hours-card .day {
+  background: #fff3e0;
+  padding: 1.5rem;
+  border-radius: 15px;
+  width: 280px;
+  text-align: center;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.hours-card .day:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 6px 15px rgba(0,0,0,0.25);
+}
+
+.hours-card h3 {
+  color: #5d3a00;
+  font-size: 1.2rem;
+  margin-bottom: 0.5rem;
+}
+
+.hours-card .time {
+  display: block;
+  font-size: 1.1rem;
+  color: #333;
+  font-weight: 600;
+}
+
